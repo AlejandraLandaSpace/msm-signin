@@ -28,13 +28,18 @@
               Sign up
             </a>
           </li>
-           <%end%>
+           <%else%>
           <li>
             <a href="/user_sign_out">
               Sign out
             </a>
           </li>
-         
+         <li>
+            <a href="/bookmarks"><%=@current_user.first_name%>
+              's Bookmarks
+            </a>
+          </li>
+            <%end%>
           <li>
             <a href="/movies">
               Movies
@@ -55,11 +60,7 @@
               Characters
             </a>
           </li>
-          <li>
-            <a href="/bookmarks">
-              Bookmark
-            </a>
-          </li>
+          
         <li>
           <a href="/">
             Home
